@@ -1,5 +1,5 @@
-# Capstone Project - London Property Image Classification
-For General Assembly Data Science Immersion Program in Singapore (Nov 2020)
+# London Property Image Classification
+Capstone Project for General Assembly Data Science Immersion Program in Singapore (Nov 2020)
 
 ## Problem Statement
 London is one of the world's most interesting property market, due to its long history, its prominent status as a international financial center, as well as the mix of modern and old buildings.
