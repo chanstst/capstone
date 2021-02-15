@@ -12,3 +12,6 @@ This project aims at tackling this problem by building a classifier to distingui
 
 ## Model
 Neural networks
+
+## Preliminary Model Results
+About 80% on validation set compared to base case at 50%, based on a sample of 200 images
