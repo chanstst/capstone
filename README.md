@@ -14,4 +14,33 @@ This project aims at tackling this problem by building a classifier to distingui
 Neural networks
 
 ## Preliminary Model Results
-About 80% on validation set compared to base case at 50%, based on a sample of 200 images
+
+### Convoluted Neural Nets
+- Total number of images: 560
+- Images of period buildings: 280
+- Images of modern buildings: 280
+
+Model details:
+- Use standard scaler
+- Use early stopper
+- Use dropout
+- AUC as metrics
+
+Model results:
+- AUC > 90%
+- Accuracy > 80% (vs baseline 50%)
+
+### VGG16
+- Transfer learning using VGG16 as the input model
+- Total number of images: 491
+- Images of period buildings: 241
+- Images of modern buildings: 250
+- Run on Google Colab
+
+Model details:
+- Dense layer: 128 neurons
+- Dropout: 0.5
+- Early Stopping: patience=5
+
+Model results:
+- Accuracy: 82%
