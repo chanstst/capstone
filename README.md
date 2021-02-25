@@ -61,16 +61,9 @@ Figure 4: Focused on analysing a subset of data (Exterior Period vs Exterior Mod
 
 ## Data Extraction and Analysis
 
-Web scrapping of the major property portals in UK
-- Rightmove
-- Zoopla
-- PurpleBricks
+Web scrapping of the major property portals in UK eg Rightmove, Zoopla, PurpleBricks. A total of 2232 images were obtained, alongside information such as coordinates, description
 
-A total of 2232 images were obtained, alongside information below:
-- Location information eg coordinates
-- Description
-
-Analysis
+Summary of features/labels
 - 2100 unique images, 132 duplicated images
 - Among the unique images, 609 exterior images, 1491 interior images
 - Among the unique images, 1085 images of new buildings, 1015 period buildings
@@ -135,11 +128,9 @@ Figure 6: ROC of Customised CNN in the first layer of classification (interior v
 
 #### Images classified as Interior
 <img src="graphics/classified_interior.jpg" alt="interior">
-Figure 7: Selected images classified as Interior
 
 #### Images classified as Exterior
 <img src="graphics/classified_exterior.jpg" alt="exterior">
-Figure 8: Selected images classified as Exterior
 
 #### Transfer Learning CNN (VGG16)
 - Classified exterior images into period vs modern very effectively
@@ -149,15 +140,12 @@ Figure 8: Selected images classified as Exterior
 - [<u><ins>Notebook</ins></u>](colab/vgg16c.ipynb)
 
 <img src="graphics/VGG16c_ROC.png" alt="vgg">
-Figure 9: ROC of Transfer Learning CNN (VGG16) in the second layer of classification (period vs modern)
 
 #### Images classified as Period/Old
 <img src="graphics/classified_period.jpg" alt="period">
-Figure 10: Selected images classified as Period/Old
 
 #### Images classified as Modern/New
 <img src="graphics/classified_modern.jpg" alt="modern">
-Figure 11: Selected images classified as Modern/New
 
 
 #### Model Comparison
@@ -170,13 +158,13 @@ Figure 11: Selected images classified as Modern/New
 - [<u><ins>Notebook</ins></u>](code/eda_model5c_all_images_grid.ipynb)
 
 
-## Unseen data on London map
+## Unseen data plotted on London map
 - The final challenge is to feed 1000 images (all unseen data) to go through the preprocessing and two layers of models
 - The result is plotted on the London map
 - It is encouraging to see period houses are concentrated in South Kensington (orange circle), and modern buildings are more common in Canary Wharf (blue circle)
 
 <img src="graphics/map.jpg" alt="map">
-Figure 12: London map - how period houses and modern buildings are distributed
+Figure 7: London map - how period houses and modern buildings are distributed
 
 
 ## Conclusion
