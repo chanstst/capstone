@@ -12,7 +12,7 @@ As a result, most buyers spend a great deal of time in property search, and rece
 This project aims at filling the information gap
 by classifying buildings as Period vs Modern, based on 2000+ images from leading portals (Rightmove, Zoopla, Purple Bricks)
 
-Results: metrics >90% (AUC, accuracy)
+Results: metrics ~90% (AUC, accuracy)
 
 ## Datasets
 - 3000+ images from public portals eg Rightmove, Zoopla, PurpleBricks
@@ -69,8 +69,10 @@ Summary of features/labels
 - Among the unique images, 1085 images of new buildings, 1015 period buildings
 
 Manual labelling
-- Basic key word search eg Georgian , Victorian etc to do first level of labelling
-- Glancing through the images as second level of labelling 
+- First round of labelling: basic key word search eg Georgian, Victorian etc to apply first labels
+- Second round of labelling: glancing through the images grouped by "first labels", then fine tune the labels manually
+
+Two rounds of labelling drastically reduced the effort and time required
 
 ## Data Preprocessing
 - Image hashing, using the library [ImageHash](https://github.com/JohannesBuchner/imagehash)
@@ -174,6 +176,7 @@ Potential commercial applications in areas of property tech:
 - Property Search Engine
 - Property Recommender System
 - Property Investment Evaluator
+
 There is room for future development to fine tuning the model and aggregating the model outputs with other data currently available
 
 
@@ -203,18 +206,19 @@ There is room for future development to fine tuning the model and aggregating th
     |   |__ vgg16c.ipynb   
     |__ common/
     |   |__ myfunctions.py
-    |__ images/
-    |   |__ predict_samples/
-    |   |__ modern_exterior/
-    |   |__ modern_samples/
-    |   |__ old_more/
-    |   |__ old_interior/
-    |__ images/
-    |   |__ myfunctions.py  
     |__ data
     |   |__ images_train_val.csv
     |__ presentation
     |   |__ Capstone20210225.pdf
     |__ graphics/	
+    |__ images/ (Google Drive)
+    |   |__ map/
+    |   |__ modern_exterior/
+    |   |__ modern_more/
+    |   |__ modern_samples/
+    |   |__ old_interior/
+    |   |__ old_more/
+    |   |__ old_samples/
+    |   |__ predict_samples/
     |__ README.md
 	
