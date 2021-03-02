@@ -12,6 +12,8 @@ As a result, most buyers spend a great deal of time in property search, and rece
 This project aims at filling the information gap
 by classifying buildings as Period vs Modern, based on 2000+ images from leading portals (Rightmove, Zoopla, Purple Bricks)
 
+A divide-and-conquer approach was taken to drastically cut down the effort in labelling, and increase the output accuracy.
+
 Results: metrics ~90% (AUC, accuracy)
 
 ## Datasets
